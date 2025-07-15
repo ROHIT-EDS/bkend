@@ -1,5 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
+from dotenv import load_dotenv
+import os
 
 # Local SQLite DB (file will be created automatically)
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"

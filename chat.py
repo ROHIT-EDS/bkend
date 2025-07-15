@@ -1,8 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from together import Together
-from . import auth, models, schemas
 import os
+
+import auth
+import models
+import schemas
 
 from dotenv import load_dotenv
 load_dotenv()
