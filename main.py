@@ -1,7 +1,12 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordRequestForm
-from . import models, schemas, database, auth, chat
+import models
+import schemas
+import database
+import auth
+import chat
+
 
 # Create tables in DB
 models.Base.metadata.create_all(bind=database.engine)
